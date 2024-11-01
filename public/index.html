@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pulsar Network: Your free, fast, and secure web proxy solution.">
+    <meta name="keywords" content="proxy, web proxy, Pulsar Network, unblock websites, free web proxy, proxy server">
+    <meta name="theme-color" content="#222831">
+    <meta name="googlebot" content="index, follow, snippet">
+    <meta name="robots" content="index, follow">
+    <title>Pulsar</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- UV Scripts -->
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        function redirectToNewURL(event) {
+            if (event.keyCode === 221) {
+                var newURL = 'https://classroom.google.com/?pli=1';
+                
+                window.location.href = newURL;
+            }
+        }
+
+        window.addEventListener('keydown', redirectToNewURL);
+    </script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px auto; /* Keep container centered */
+                width: 100%;
+                max-width: 500px; /* Increase width slightly */
+            }
+
+            #uv-address {
+                flex: 1;
+                padding: 14px; /* Increase padding */
+                font-size: 18px; /* Slightly larger font */
+            }
+
+            #sigma {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px; /* Add space between search bar and icons */
+            }
+
+            #sigma a {
+                margin: 0 10px; /* Adjust spacing between icons */
+                font-size: 24px; /* Adjust icon size as desired */
+            }
+    
+            @keyframes settingsSpin {
+                0% {rotate: 0deg;}
+                100% {rotate: 360deg;}
+            }
+        
+            @keyframes gradAnimate {
+                0% {background-position: 0% 2%;}
+                50% {background-position: 100% 99%;}
+                100% {background-position: 0% 2%;}
+            }
+
+
+            
+            body {
+                font-family: "Varela Round", sans-serif;
+                background-image: linear-gradient(315deg, #03055b, black);
+                animation-name: gradAnimate;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease;
+                color: #c0c0c0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            .description {
+                text-align: center;
+                font-size: 1.2em;
+                color: #f0f0f0;
+            }
+            .search-container {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            #uv-form {
+                display: flex;
+                width: 90%;
+                max-width: 600px;
+            }
+            #uv-address {
+                justify-content: center;
+                flex: 1;
+                padding: 15px;
+                border: 1px solid #555;
+                border-radius: 4px 0 0 4px;
+                font-size: 16px;
+                background-color: #000000;
+                color: #c0c0c0;
+            }
+            #logo {
+                border-radius: 300px;
+            }
+            input[type="submit"] {
+                padding: 15px;
+                border: none;
+                background: linear-gradient(45deg, #003366, #006699);
+                color: #fff;
+                border-radius: 0 4px 4px 0;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background 0.3s, box-shadow 0.3s;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            }
+            input[type="submit"]:hover {
+                background: linear-gradient(45deg, #006699, #003366);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            }
+            main {
+                margin-top: 100px;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            footer {
+                background-color: #000000;
+                padding: 10px;
+                text-align: center;
+                font-size: 14px;
+                color: #777;
+                width: 100%;
+            }
+            footer a {
+                color: #c0c0c0;
+                text-decoration: none;
+                margin: 0 5px;
+            }
+    
+            i[class="fas fa-cog"]:hover {
+                animation-name: settingsSpin;
+                animation-duration: 0.5s;
+            }
+        </style>
+  <script src="uv/uv.bundle.js"></script>
+  <script src="uv/uv.config.js"></script>
+  <script src="assets/register-sw.js"></script>
+</head>
+<body>
+    <div class="custom-cursor" id="customCursor">
+
+    </div>
+    <a href="index.html" class="logo">
+        <img src="Images/Pulsar Network nobg.png" alt="Pulsar Logo">
+    </a>
+    <!-- Navigation Bar -->
+<div class="nav-bar">
+    <a href="index.html" class="nav-button">
+        <i class="fas fa-home"></i> Home
+    </a>
+    <a href="chat.html" class="nav-button">
+        <i class="fas fa-comment-dots fa-flip-horizontal"></i> Chat
+    </a>
+    <a href="games.html" class="nav-button">
+        <i class="fas fa-gamepad"></i> Games
+    </a>
+    <a href="apps.html" class="nav-button">
+        <i class="fas fa-mobile-alt"></i> Apps
+    </a>
+    <a href="settings.html" class="nav-button">
+        <i class="fas fa-cog"></i> Settings
+    </a>
+</div>
+    <a href="credits.html" class="credit">
+        <i class="fas fa-book"></i> 
+    </a>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+        <h1 id="stitle">Pulsar</h1>
+        <p class="memo">Browse the web unblocked, for free</p>
+  <div class="container">
+    <input id="uv-address" type="text" class="input" placeholder="Search...">
+    <input type="submit" value="Go">
+  </div>
+    
+<span id="sigma" >
+        <a id="sigma" href="https://discord.gg/YqvG3k9YMd" target="_blank" class="fa-brands fa-discord"></a>
+        <a id="sigma" href="https://github.com/Yeti1o1/Pulsar" target="_blank"class="fa-brands fa-github"></a>
+        <a id="sigma" href="" target="_blank"class="fas fa-folder"></a>
+        </span>
+        <script>
+            const customCursor = document.getElementById('customCursor');
+            const spikes = document.getElementById('spikes');
+    
+            document.addEventListener('mousemove', (e) => {
+                customCursor.style.left = `${e.pageX}px`;
+                customCursor.style.top = `${e.pageY}px`;
+            });
+    
+            // Show spikes on hover
+            const hoverElements = document.querySelectorAll('.nav-button');
+    
+            hoverElements.forEach(element => {
+                element.addEventListener('mouseenter', () => {
+                    spikes.classList.add('visible');
+                });
+                element.addEventListener('mouseleave', () => {
+                    spikes.classList.remove('visible');
+                });
+            });
+        </script>
+  <script src="assets/script.js" defer></script>
+</body>
+</html>

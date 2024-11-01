@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#222831">
+    <meta name="googlebot" content="index, follow, snippet">
+    <meta name="robots" content="index, follow">
+    <title>Pulsar</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/Background.css">
+    <link rel="stylesheet" type="text/css" href="css/Blank1.css">
+    <link rel="stylesheet" type="text/css" href="css/Blank2.css">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <script>
+        function redirectToNewURL(event) {
+            if (event.keyCode === 221) {
+                var newURL = 'https://classroom.google.com/?pli=1';
+                window.location.href = newURL;
+            }
+        }
+
+        window.addEventListener('keydown', redirectToNewURL);
+    </script>
+</head>
+<body>
+    <div class="custom-cursor" id="customCursor">
+    </div>
+
+    <a href="index.html" class="logo">
+        <img src="Images/Pulsar Network nobg.png" alt="Pulsar Logo">
+    </a>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <a href="index.html" class="nav-button">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="chat.html" class="nav-button">
+            <i class="fas fa-comment-dots fa-flip-horizontal"></i> Chat
+        </a>
+        <a href="games.html" class="nav-button">
+            <i class="fas fa-gamepad"></i> Games
+        </a>
+        <a href="apps.html" class="nav-button">
+            <i class="fas fa-mobile-alt"></i> Apps
+        </a>
+        <a href="settings.html" class="nav-button">
+            <i class="fas fa-cog"></i> Settings
+        </a>
+    </div>
+        <a href="credits.html" class="credit">
+            <i class="fas fa-book"></i> 
+        </a>
+
+    <script>
+        const customCursor = document.getElementById('customCursor');
+        const spikes = document.getElementById('spikes');
+
+        document.addEventListener('mousemove', (e) => {
+            customCursor.style.left = `${e.pageX}px`;
+            customCursor.style.top = `${e.pageY}px`;
+        });
+
+        // Show spikes on hover
+        const hoverElements = document.querySelectorAll('.nav-button');
+
+        hoverElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                spikes.classList.add('visible');
+            });
+            element.addEventListener('mouseleave', () => {
+                spikes.classList.remove('visible');
+            });
+        });
+    </script>
+
+    <br><br><br><br>
+    <h3> As of right now the chat room is not set up. </h3>
+    <br><br><br>
+</body>
+</html>

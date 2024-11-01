@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#222831">
+    <meta name="googlebot" content="index, follow, snippet">
+    <meta name="robots" content="index, follow">
+    <title>Pulsar</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/Blank1.css">
+    <link rel="stylesheet" type="text/css" href="css/Blank2.css">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <script>
+        function redirectToNewURL(event) {
+            if (event.keyCode === 221) {
+                var newURL = 'https://classroom.google.com/?pli=1';
+                window.location.href = newURL;
+            }
+        }
+        window.addEventListener('keydown', redirectToNewURL);
+    </script>
+    <style>
+        #gameSection {
+            display: block;
+        }
+        #gameFrame {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+        .imgg {
+            width: 300px;
+            max-height: 160px; 
+            min-height: 160px;
+            margin-top: 5px; 
+            margin-bottom: 15px; 
+            border-radius: inherit;
+            position: relative;
+        }
+        .btn {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            padding: 0px;
+        }
+        .btn-container {
+            position: relative;
+        }
+        h3 {
+            color: #ffffff;
+            text-align: center;
+            font-size: 30px;
+        }
+        .nav-bar {
+            min-height: 17%;
+        }
+        .btn {
+            background-color: #22283100;
+            color: #0099ff;
+            font-weight: bold;
+            border: none;
+            letter-spacing: 1.5px;
+            overflow: hidden;
+            transition: 0s;
+            cursor: default;
+            margin: 15px 10px 0px;
+            width: calc((100% - 1px) / 3);
+            max-width: 300px;
+            height: calc((100% - 1px) / 3);
+            min-height: 160px;
+            max-height: 160px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-cursor" id="customCursor"></div>
+    <a href="index.html" class="logo">
+        <img src="Images/Pulsar Network nobg.png" alt="Pulsar Logo">
+    </a>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <a href="index.html" class="nav-button">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="chat.html" class="nav-button">
+            <i class="fas fa-comment-dots fa-flip-horizontal"></i> Chat
+        </a>
+        <a href="games.html" class="nav-button">
+            <i class="fas fa-gamepad"></i> Games
+        </a>
+        <a href="apps.html" class="nav-button">
+            <i class="fas fa-mobile-alt"></i> Apps
+        </a>
+        <a href="settings.html" class="nav-button">
+            <i class="fas fa-cog"></i> Settings
+        </a>
+    </div>
+        <a href="credits.html" class="credit">
+            <i class="fas fa-book"></i> 
+        </a>
+
+    <div class="btn-container">
+        <h3 id="gameSection"></h3>
+        <button class="btn" onclick="Bl();HBC('Apps/Advanced Code Editor 1.html')">
+            <img class="imgg" src="Images/Advanced Code Editor 1.png" alt="Advanced Code Editor 1">
+        </button>
+        <button class="btn" onclick="Bl();HBC('Apps/Advanced Code Editor 2.html')">
+            <img class="imgg" src="Images/Advanced Code Editor 2.png" alt="Advanced Code Editor 2">
+        </button>
+        <button class="btn" onclick="Bl();HBC('Apps/Calculator Algebra.html')">
+            <img class="imgg" src="Images/Calculator Algebra.png" alt="Calculator Algebra">
+        </button>
+        <button class="btn" onclick="Bl();HBC('Apps/Calculator Simple.html')">
+            <img class="imgg" src="Images/Calculator Simple.png" alt="Calculator Simple">
+        </button>
+        <button class="btn" onclick="Bl();HBC('Apps/Emulators/Emulator JS/CLICK ME.html')">
+            <img class="imgg" src="Images/Emulator JS.png" alt="Emulator JS">
+        </button>
+        <button class="btn" onclick="Bl();HBC('Apps/Emulators/Emulator WebRetro/CLICK ME.html')">
+            <img class="imgg" src="Images/Emulator WebRetro.png" alt="Emulator WebRetro">
+        </button>
+        <button class="btn" onclick="Bl();HBC('Apps/Ruffle/CLICK ME.html')">
+            <img class="imgg" src="Images/Ruffle.png" alt="Ruffle">
+        </button>
+        <button class="btn" onclick="Bl();HBC('Apps/Turbowarp/CLICK ME.html')">
+            <img class="imgg" src="Images/Turbowarp.png" alt="Turbowarp">
+        </button>
+        <button class="btn" onclick="Bl();HBC('Apps/Wordle Bot/CLICK ME.html')">
+            <img class="imgg" src="Images/Wordle Bot.png" alt="Wordle Bot">
+        </button>
+        
+
+
+
+        <iframe id="gameFrame" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+    </div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    <script>
+        function Ba() {
+            var x = document.getElementById("gameFrame");
+            x.style.backgroundColor = "white";
+        }
+    </script>
+    <script>
+        function Bl() {
+            var x = document.getElementById("gameFrame");
+            x.style.backgroundColor = "black";
+        }
+    </script>
+    <script>
+        function HBC(url) {
+            var gameSection = document.getElementById("gameSection");
+            gameSection.style.display = "none"; // Hide the game section
+            var gameFrame = document.getElementById("gameFrame");
+            gameFrame.style.display = "block"; // Show the iframe
+            gameFrame.src = url;               // Set the iframe source
+            customCursor.style.display = 'none'; // Ensure it's hidden initially
+    
+        }
+    </script>
+    <script>
+        const customCursor = document.getElementById('customCursor');
+        const spikes = document.getElementById('spikes');
+        let mouseX = 0;
+        let mouseY = 0;
+    
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX; // Use clientX to get mouse position relative to the viewport
+            mouseY = e.clientY; // Use clientY to get mouse position relative to the viewport
+            customCursor.style.display = 'block'; // Show the cursor on mouse move
+        });
+    
+        function updateCursor() {
+            // Set the position of the custom cursor
+            customCursor.style.left = `${mouseX}px`;
+            customCursor.style.top = `${mouseY}px`;
+    
+            // Teleport if it's more than 10 pixels away from the mouse position
+            const cursorRect = customCursor.getBoundingClientRect();
+            if (Math.abs(mouseX - cursorRect.left) > 10 || Math.abs(mouseY - cursorRect.top) > 10) {
+                customCursor.style.left = `${mouseX}px`;
+                customCursor.style.top = `${mouseY}px`;
+            }
+            requestAnimationFrame(updateCursor);
+        }
+        requestAnimationFrame(updateCursor);
+    
+        const hoverElements = document.querySelectorAll('.nav-button');
+        hoverElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                spikes.classList.add('visible');
+            });
+            element.addEventListener('mouseleave', () => {
+                spikes.classList.remove('visible');
+            });
+        });
+    </script>
+    </body>
+    </html>
+    

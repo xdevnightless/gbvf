@@ -1,0 +1,317 @@
+/* Basic CSS boilerplate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: "Varela Round", sans-serif;
+    background-image: linear-gradient(315deg, #03055b, black);
+    animation-name: gradAnimate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    color: #c0c0c0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyy {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #222831; /* Dark background for the entire site */
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    height: 80px;
+    width: 100%;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    gap: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    position:inherit;
+}
+
+.nav-button {
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+.memo {
+    text-align: center;
+    font-size: 1.1em;
+    color: #f0f0f0;
+    margin-top: 10px; /* Space between "Pulsar" and the memo */
+    font-style: italic; /* Optional: adds an italic style for a softer look */
+}
+}
+.credit {
+    position: absolute;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    top: 25px;
+    right: 16px;
+    z-index: 500;
+  }
+
+.nav-button img {
+    height: 24px;
+    width: 24px;
+}
+
+.nav-button:hover {
+    background: #0077ff;
+    border-radius: 5px;
+}
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #393e46; /* Track color */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0077ff; /* Thumb color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0077ff; /* Change thumb color on hover */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* Make scrollbar thinner */
+    scrollbar-color: #0077ff #393e46; /* Thumb and track color */
+}
+
+/* For IE and Edge */
+body {
+    -ms-overflow-style: scrollbar; /* Enable scrollbar styling */
+}
+body {
+    cursor: none !important; /* Hide default cursor */
+    margin: 0;
+}
+
+.custom-cursor {
+    display: none; /* Hide custom cursor by default */
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8), 0 0 10px rgba(0, 123, 255, 0.5), 0 0 15px rgba(0, 123, 255, 0.3); /* Blue glowing border */
+}
+
+body:hover .custom-cursor {
+    display: block; /* Show custom cursor on hover */
+}
+
+
+
+
+.nav-bar {
+    min-height: 17%;
+    max-height: 17%;
+}
+
+/* Ensure all elements also have no cursor */
+* {
+    cursor: none !important; /* Hide default cursor on all elements */
+}
+
+
+/* Hide iframe initially */
+.dnone {
+    display: none;
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+}
+
+.logo {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    z-index: 500;
+  }
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Style the main content */
+#main {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px); /* Adjust height to account for fixed navbar */
+    background: linear-gradient(135deg, #000000, #1b043a, #1a1342); /* Darker blue gradient */
+    -webkit-animation: backgroundAnim 60s ease infinite;
+    -moz-animation: backgroundAnim 60s ease infinite;
+    animation: backgroundAnim 60s ease infinite;
+    background-attachment: fixed;
+    background-size: 300% 300%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem; /* Adjust padding for navbar */
+}
+
+#title {
+    position: relative;
+    font-size: 3rem; /* Adjust as necessary */
+    color: #ffffff; /* Text color */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* Subtle glow */
+}
+
+#stitle {
+    text-align: center;
+    font-size: 3.2rem; /* Adjust as necessary */
+    color: #ffffff; /* Text color */
+    text-shadow: 
+        0 0 5px rgba(7, 105, 234, 0.8), /* Inner glow */
+        0 0 10px rgba(7, 105, 234, 0.5), /* Middle glow */
+        0 0 20px rgba(7, 105, 234, 0.3); /* Outer glow */
+    animation: glowFadeAnim 3s ease-in-out infinite alternate; /* Combined animation */
+}
+#sigma {
+    bottom:0%;
+    font-size: 25px;
+    text-align: center;
+    size: 50px;
+    color: white;
+    text-decoration: none;
+}
+@keyframes glowFadeAnim {
+    0% { 
+        opacity: 1; 
+        text-shadow: 
+            0 0 5px rgba(7, 105, 234, 0.8), 
+            0 0 10px rgba(7, 105, 234, 0.5), 
+            0 0 20px rgba(7, 105, 234, 0.3); 
+    }
+    100% { 
+        opacity: 0.05; /* Fade out */
+        text-shadow: 
+            0 0 10px rgb(0, 0, 0), 
+            0 0 30px rgba(0, 0, 0, 0.7), 
+            0 0 80px rgba(0, 0, 0, 0.5); /* Increased glow */
+    }
+}
+
+
+/* Style the title */
+#title {
+    color: rgb(255, 255, 255);
+    font: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.special{
+    text-align:center;
+    padding:10px;
+    color: #0955ed;
+
+}
+h3{
+    color: #ffffff;
+    text-align: center;
+    font-size:30px;
+}
+h4{
+    color: #ffffff;
+    text-align: center;
+    font-size:20px;
+}
+/* Style the description */
+#description {
+    color: white;
+    font-weight: 200;
+    opacity: 0.75;
+}
+
+/* Style the input (address bar) */
+#address {
+    width: 30rem;
+    height: 3rem;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 1rem;
+}
+
+/* Style the iframe */
+#frame {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: black;
+    outline: none;
+    border: none;
+}
+
+/* Style the button container */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem; /* Make buttons smaller */
+    border-radius: 8px;
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.15);
+}
+color: white;
+    border: none;
+    padding: 0.5rem 1rem; /* Make buttons smaller */
+    border-radius: 8px;
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.15);
+}
